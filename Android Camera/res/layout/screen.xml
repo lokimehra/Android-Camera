@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal">
+
+    <ScrollView 
+        android:id="@+id/optionHolder"
+	    android:layout_width="wrap_content"
+	    android:layout_height="fill_parent"
+	    android:orientation="vertical"
+	    android:visibility="gone">
+	    <LinearLayout 
+	        android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical">
+
+	        <Button
+	            android:id="@+id/whiteBalanceButton"
+	            android:layout_width="wrap_content"
+	            android:layout_height="fill_parent"
+	            android:background="@drawable/whitebalance" />
+
+		    <LinearLayout 
+		        android:id="@+id/whiteBalance"
+		    	android:layout_width="wrap_content"
+		    	android:layout_height="fill_parent"
+		    	android:orientation="vertical"
+		    	android:visibility="gone">
+		    	<Button
+		    	    android:id="@+id/incandescent"
+		    	    android:layout_width="wrap_content"
+		    	    android:layout_height="wrap_content"
+		    	    android:background="@drawable/incandescent" />
+		    	<Button
+		    	    android:id="@+id/floroscent"
+		    	    android:layout_width="wrap_content"
+		    	    android:layout_height="wrap_content"
+		    	    android:background="@drawable/fluoroscent" />
+		    	<Button
+		    	    android:id="@+id/auto"
+		    	    android:layout_width="wrap_content"
+		    	    android:layout_height="wrap_content"
+		    	    android:background="@drawable/awb" />
+		    	<Button
+		    	    android:id="@+id/cloudyDaylight"
+		    	    android:layout_width="wrap_content"
+		    	    android:layout_height="wrap_content"
+		    	    android:background="@drawable/cloudy" />
+		    	<Button
+		    	    android:id="@+id/daylight"
+		    	    android:layout_width="wrap_content"
+		    	    android:layout_height="wrap_content"
+		    	    android:background="@drawable/daylight" />
+	
+			</LinearLayout>
+	
+		    <Button
+		        android:id="@+id/effectsButton"
+		        android:layout_width="wrap_content"
+		        android:layout_height="fill_parent"
+		        android:background="@drawable/effects" />
+
+			<LinearLayout 
+			    android:id="@+id/effects"
+		    	android:layout_width="wrap_content"
+		    	android:layout_height="fill_parent"
+		    	android:orientation="vertical"
+		    	android:visibility="gone">
+		    	<Button
+		    	    android:id="@+id/negative"
+		    	    android:layout_width="wrap_content"
+		    	    android:layout_height="wrap_content"
+		    	    android:background="@drawable/negative" />
+		    	<Button
+		    	    android:id="@+id/none"
+		    	    android:layout_width="wrap_content"
+		    	    android:layout_height="wrap_content"
+		    	    android:background="@drawable/none" />
+		    	<Button
+		    	    android:id="@+id/solarize"
+		    	    android:layout_width="wrap_content"
+		    	    android:layout_height="wrap_content"
+		    	    android:background="@drawable/emphasis" />
+		    	<Button
+	    		    android:id="@+id/aqua"
+	    		    android:layout_width="wrap_content"
+	    		    android:layout_height="wrap_content"
+	    		    android:background="@drawable/aqua" />
+		    	<Button
+		    	    android:id="@+id/mono"
+		    	    android:layout_width="wrap_content"
+		    	    android:layout_height="wrap_content"
+		    	    android:background="@drawable/mono" />
+		    	<Button
+		    	    android:id="@+id/sepia"
+		    	    android:layout_width="wrap_content"
+		    	    android:layout_height="wrap_content"
+		    	    android:background="@drawable/sepia" />
+			</LinearLayout>
+	
+			<Button
+			    android:id="@+id/zoomButton"
+			    android:layout_width="wrap_content"
+			    android:layout_height="fill_parent"
+			    android:background="@drawable/zoom" />
+
+			<LinearLayout 
+		    	android:id="@+id/zoom"
+		    	android:layout_width="wrap_content"
+		    	android:layout_height="fill_parent"
+		    	android:visibility="gone"
+		    	android:orientation="vertical">
+				<ZoomButton
+				    android:id="@+id/zoomIn"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:src="@drawable/zoomup" />
+		        <ZoomButton
+		            android:id="@+id/zoomOut"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:src="@drawable/zoomdown" />
+	
+			</LinearLayout>
+	
+			<Button
+			    android:id="@+id/exposureButton"
+			    android:layout_width="wrap_content"
+			    android:layout_height="fill_parent"
+			    android:background="@drawable/expo" />
+
+			<LinearLayout 
+		    	android:id="@+id/exposure"
+		    	android:layout_width="wrap_content"
+		    	android:layout_height="fill_parent"
+		    	android:visibility="gone"
+		    	android:orientation="vertical">
+		        <ZoomButton
+		            android:id="@+id/exposureUp"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:src="@drawable/zoomup" />
+		        <ZoomButton
+		            android:id="@+id/exposureDown"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:src="@drawable/zoomdown" />
+			</LinearLayout>
+			
+			<Button
+			    android:id="@+id/sceneModeButton"
+			    android:layout_width="wrap_content"
+			    android:layout_height="fill_parent"
+			    android:background="@drawable/scene" />
+
+			<LinearLayout 
+		    	android:id="@+id/sceneMode"
+		    	android:layout_width="wrap_content"
+		    	android:layout_height="fill_parent"
+		    	android:visibility="gone"
+		    	android:orientation="vertical">
+
+		        <Button
+		            android:id="@+id/smAction"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:background="@drawable/action" />
+
+		        <Button
+		            android:id="@+id/smAuto"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:background="@drawable/auto" />
+
+		        <Button
+		            android:id="@+id/smBeach"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:background="@drawable/beach" />
+
+		        <Button
+		            android:id="@+id/smCandlelight"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:background="@drawable/candle" />
+
+		        <Button
+		            android:id="@+id/smFireworks"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:background="@drawable/firework" />
+
+		        <Button
+		            android:id="@+id/smLandscape"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:background="@drawable/landscape" />
+
+		        <Button
+		            android:id="@+id/smNight"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:background="@drawable/night" />
+
+		        <Button
+		            android:id="@+id/smNightPortrait"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:background="@drawable/nightportrait" />
+
+		        <Button
+		            android:id="@+id/smParty"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:background="@drawable/party" />
+
+		        <Button
+		            android:id="@+id/smPortrait"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:background="@drawable/portrait" />
+
+		        <Button
+		            android:id="@+id/smSnow"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:background="@drawable/snow" />
+
+		        <Button
+		            android:id="@+id/smSport"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:background="@drawable/sport" />
+
+		        <Button
+		            android:id="@+id/smSteadyPhoto"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:background="@drawable/steady" />
+
+		        <Button
+		            android:id="@+id/smSunset"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:background="@drawable/sunset" />
+
+		        <Button
+		            android:id="@+id/smTheatre"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:background="@drawable/theater" />
+
+			</LinearLayout>
+		</LinearLayout>
+	</ScrollView>
+	
+    <FrameLayout
+        android:id="@+id/preview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:clickable="true">
+    </FrameLayout>
+     
+    <LinearLayout
+        android:layout_width="wrap_content"
+   		android:layout_height="wrap_content"
+   		android:orientation="vertical"
+   		android:layout_gravity="center">
+		<Button
+		    android:id="@+id/buttonGallery"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginBottom="40dp"
+		    android:layout_marginTop="10dp"
+		    android:background="@android:drawable/ic_menu_gallery"/>
+
+		<Button
+		    android:id="@+id/buttonClick"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginBottom="20dp"
+		    android:layout_marginTop="20dp"
+		    android:background="@drawable/click" />
+
+        <Button
+            android:id="@+id/buttonDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="40dp"
+            android:background="@android:drawable/ic_menu_delete"/>
+    </LinearLayout>
+</LinearLayout>
