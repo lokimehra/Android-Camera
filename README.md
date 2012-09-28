@@ -1,4 +1,4 @@
 Android-Camera
 ==============
 
-Will be uploaded soon.. :)
+A simple android camera implementation. Supports API level 9 or above.
